@@ -1,0 +1,757 @@
+*{
+    font-family : "Raleway", "Arial", "Sans-serif";
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Raleway"; 
+    src: url("/Fonts/Raleway-VariableFont_wght.ttf") format("ttf"),
+           /* url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); */  
+        }
+   @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+   html{
+       font-size: 100%;
+   }
+
+body{
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.gridcontainer{
+    max-width : 1440px;
+    margin : auto;
+    padding : 0 2rem;
+}
+
+.milieu{
+    grid-column: 2;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+.logoconteneur{
+    display : flex;
+    align-items: center;
+}
+
+.menu{
+    display : grid;
+    grid-template-columns: 60% auto auto auto;
+}
+
+.menu>a{
+    display : flex;
+    justify-content : flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+header .main-container .header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 130px;
+
+}
+
+header a{
+    flex-wrap: wrap;
+    padding : 2.4vw 1.8vw 2.4vw 1.8vw;
+    font-weight: 500 ;
+    border-top: 2px solid white;
+}
+
+a:link, a:visited{
+    text-decoration : none;
+    color: black;
+}
+header a:hover, header a:active{
+    text-decoration : none;
+    border-top : 2px solid #0065FC;
+    color : #0065FC;
+}
+
+
+.searchbar {
+    display : flex;
+    border: solid rgba(red, green, blue, alpha) 0.05rem;
+    hauteur : 3rem;
+    largeur : 20rem;
+    font-size : 1,8rem;
+    font-family: raleway;
+    margin : 30px 0 30px 0;
+}
+
+.fa-map-marker-alt{
+    background-color: #F2F2F2;
+    border-image : 1rem 1.25rem;
+    border-radius : 1rem 0 0 1rem;
+    text-align : center;
+}
+
+.login{
+    color : #0065FC !important;
+    font-weight: bold;
+}
+
+.searchbutton{
+    background-color : #0065FC;
+    color : white;
+    font-weight : bold;
+    border : unset;
+    height: 3rem
+    width: 9rem;
+    border-radius: 0 1rem 1rem 0;
+    padding : 0 1.5rem;
+    font-family:"Raleway", "Arial";
+    font-size: 1rem;
+    cursor : pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.fa-search{
+    display : none;
+}
+
+.searchfield{
+    width : 14vw;
+    border : none;
+    padding : 0 1.15rem;
+}
+
+.searchfield::placeholder{
+    font-size : 16px;
+    font-weight : 700;
+    color : #00000069;
+}
+
+i.fas{
+    display: flex;
+    align-items: center;
+}
+
+.searchbutton > i{
+    display: none;
+}
+
+.filters{
+
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2vw;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+    padding-right: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+
+}
+
+.containf{
+    background-color: #DEEBFF;
+    color: blue;
+    border-radius: 100%;
+    height: 3.25rem;
+    width: 3.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fas .fa{
+    color: blue;
+}
+
+.f{
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    border: 2px solid #d9d9d9;
+}
+
+.resultsearch{
+    display: flex;
+    margin: 1rem 0 2rem 0;
+    align-items: center;
+}
+
+.resulticon{
+    min-width: 2rem;
+    min-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.fa-info{
+    color:#0065FC
+}
+
+
+.ftitle{
+    margin: 0 1rem 0 1rem;
+    font-weight: bold;
+}
+
+
+.flexaside{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    clear : 25px;
+    justify-content : space-between;
+    align-items: flex-start;
+    box-sizing: content-box;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    font-family: raleway;
+}
+
+.box>.imgcontainer{
+    padding: 6px 6px 0 6px;
+}
+
+.setimg{
+    object-fit: cover;
+    object-position: center;
+    height: 7vw;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    
+}
+
+.gridlog{
+    display: grid;
+    flex-direction: row; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 1.5rem;
+    justify-content: space-between;
+}
+
+
+.logementm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+."Photo de la Cannebière"{
+    width: 100%;
+    height: 9rem;
+    object-fit : cover;
+}
+.fa-star{
+    color: #0065FC;
+}
+.unrated-star{
+    color: #F2F2F2;
+}
+.card-text{
+    margin-top: 1.2rem;
+    padding-left: 0.8em;
+}
+
+strong{
+    font-weight: 600;
+}
+
+.aside{
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr);
+    padding: 2rem;
+    row-gap: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+}
+.box{
+    width: 100%;
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1.5rem;
+    background-color: white;
+}
+
+.descricontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4px;
+    
+}
+
+.describox > div > .fa-star{
+    margin-left: 0.5rem;
+}
+
+.descricontainer>div>h3{
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.descricontainer>div>p{
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.descricontainer>div.starsrate{
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    color: #0065FC;
+    padding: 0px 4px 0 4px;
+}
+
+
+.box h3{
+    margin: 2px 10px 5px 10px;
+}
+
+.box p{
+    margin: 0px 10px 5px 10px;
+    font-size: 18px;
+}
+
+.starsrate{
+    margin: 0px 10px 5px 10px;
+    display: flex;
+    color: #0065FC;
+    padding: 4px;
+}
+.starsrate>i{
+    padding-right: 4px;
+}
+.asidebox{
+    display: flex;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.asidegrid{
+    padding: 2 rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+.relativebox{
+    position: relative;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+    height: 100%;
+}
+
+.asidesetimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 8.5rem;
+    height: 8.5rem;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+
+aside .description > div{
+    margin: 0 0 0.30rem 0.125rem;
+}
+
+.reltitle{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+    column-gap: 2rem;
+}
+  
+.carteune { 
+    grid-area: 1 / 1 / 7 / 2; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+  
+.cartedeux{ 
+    grid-area: 1 / 2 / 4 / 3; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+  
+.cartetrois{ 
+    grid-area: 5 / 2 / 7 / 3; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+  
+.cartequatre{ 
+    grid-area: 1 / 3 / 7 / 4; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden; 
+}
+  
+.cartecinq{ 
+    grid-area: 1 / 4 / 3 / 5; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.cartesix{
+    grid-area: 5/ 4 / 7 / 5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.actimgcontainer{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.actimg{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.titleact{
+    margin: 1.2rem 1.5rem;
+}
+  
+.footer{
+    margin-top: 50px;
+    padding: 2rem;
+    font-family: "Raleway", "Sans serif";
+    background-color: #f2f2f2;
+}
+
+.columncontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 100%;
+    width: 1440px;
+}
+
+.columnone, .columntwo, .columnthree{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    row-gap: 0.75rem;
+}
+
+.footerlink{
+    margin: 0;
+}
+
+a.footerlink:link, a.footerlink:active{
+    text-decoration: none;
+    color: black;
+}
+
+.false{
+    color: #d9d9d9;
+}
+
+.box:hover, .asidebox:hover, .act:hover, .f:hover{
+
+    transform: scale(1.04);
+}
+
+.box, .asidebox, .act, .f{
+    transition-duration: 500ms;
+}
+
+@media (max-width: 1430px){ 
+
+    .flexaside{
+        grid-template-columns: auto;
+        row-gap: 2rem;
+    }
+
+    .aside{
+        grid-area: 1;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+
+    }
+
+    .aside>h2{
+        grid-column: 1/-1;
+    }
+
+    .describox{
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+
+    h1, .subtitle, .searchbar, .filters, .resultsearch, .footer{
+        padding-left: 2rem;
+    }
+
+    #activites{
+        padding: 0 2rem;
+    }
+    .gridcontainer {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .gridlog{
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        padding: 2rem;
+        background-color: white;
+        border-radius: 1.5rem;
+    }
+
+    .flexaside{
+        row-gap: 2rem;
+    }
+
+    .filtertitle{
+        width: 100%;
+    }
+
+    .aside{
+        display: grid;
+        grid-template-rows: auto repeat(3, 1fr);
+        grid-template-columns: auto;
+        padding: 2rem;
+        row-gap: 2rem;
+        background-color: #f2f2f2;
+        border-radius: 0;
+    }
+
+    .logementm{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: auto;
+    }
+
+    .setimg{
+        height: 30vw;
+    }
+
+    .menu{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .logocontainer{
+        justify-content: center;
+    }
+
+    .login{
+        grid-area: 1/2;
+    }
+
+    header a{
+        padding: 5vw;
+    }
+
+    .searchfield{
+        width: 14rem;
+    }
+
+    i.fa-search{
+        display: flex;
+    }
+
+    .switch{
+        display: none;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 40vw);
+        row-gap: 2rem;
+    }
+
+    .grid-container>*{
+        grid-area: auto;
+    }
+    
+    .columncontainer{
+        flex-direction: column;
+    }
+
+    .columnone, .columntwo, .columnthree{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header a:hover, header a:active{
+        text-decoration: none;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color:  #0065FC;
+    }
+
+    h1, .subtitle, .searchbar, .filters, .resultsearch, .footer{
+        padding-left: 2rem;
+    }
+
+    #activites{
+        padding: 0 2rem;
+    }
+    .gridcontainer {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .gridlog{
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        padding: 2rem;
+        background-color: white;
+        border-radius: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    nav {
+      order: 1;
+      flex: 1 100%;
+    }
+    .navlink {
+      border-top-style: none;
+      border-bottom: 3px solid #f2f2f2;
+      padding-bottom: 1rem;
+    }
+    .navlink:hover {
+      border-top-style: none;
+      border-bottom: 3px solid #0065fc;
+    }
+    .signin {
+      margin-bottom: 1em;
+    }
+    .filters {
+      margin-bottom: 0.5em;
+    }
+    .filters p {
+      font-size: 0.8em;
+      font-weight: 700;
+    }
+    .main_page {
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 90%;
+      min-width: 90%;
+      margin: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card {
+      order: -1;
+    }
+    article {
+      width: 95%;
+    }
+    aside {
+      width: 90%;
+      margin: auto;
+      margin-top: 1rem;
+    }
+    .side-title {
+      display: flex;
+      justify-content: space-between;
+    }
+    .activites {
+      margin-bottom: 1rem;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+      margin: auto;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+@media (largeur max : 768px) {
+
+    .gridClassResult {
+       grid-template-columns: repeat(1 ,1fr);
+    }
+ 
+    #divActivités {
+       grid-template-columns: repeat(1 ,1fr);
+    }
+ 
+    .gridFooter {
+       grid-template-columns: repeat(1 ,1fr);
+       écart : 2 % ;
+       marge : 2em 2em 3em 3em ;
+    }
+ 
+    .imageBanner2 {
+       hauteur : 10em ;
+    }
+ }
+ 
