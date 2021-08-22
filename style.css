@@ -1,10 +1,10 @@
 *{
-    font-family : "Raleway", "Arial", "Sans-serif";
+    font-family : 'Raleway', Arial, Sans-serif;
     scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: "Raleway"; 
+    font-family: 'Raleway'; 
     src: url("/Fonts/Raleway-VariableFont_wght.ttf") format("ttf"),
            /* url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); */  
         }
@@ -25,22 +25,30 @@ body{
     padding : 0 2rem;
 }
 
-.milieu{
-    grid-column: 2;
+.middle{
+    grid-column: 2 !important;
 }
 
 header{
     margin-bottom: 20px;
 }
 
+#logo{
+    width: 12%;
+    margin-right: auto;
+}
+
 .logoconteneur{
     display : flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .menu{
     display : grid;
     grid-template-columns: 60% auto auto auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .menu>a{
@@ -109,7 +117,7 @@ header a:hover, header a:active{
     padding : 0 1.5rem;
     font-family:"Raleway", "Arial";
     font-size: 1rem;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 button:hover {
@@ -158,16 +166,27 @@ i.fas{
 .containf{
     background-color: #DEEBFF;
     color: blue;
-    border-radius: 100%;
+    border-radius: 25px 25px 25px 25 px;
     height: 3.25rem;
     width: 3.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
+    padding-right: 20px;
+    border: 2px solid #F2F2F2;
 }
 
 .fas .fa{
     color: blue;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+  color: #0065fc;
+  font-size: 0.8em;
 }
 
 .f{
@@ -217,11 +236,12 @@ i.fas{
     justify-content : space-between;
     align-items: flex-start;
     box-sizing: content-box;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     flex-wrap: wrap;
     column-gap: 2rem;
     font-family: raleway;
+    background-color: #f2f2f2;
 }
 
 .box>.imgcontainer{
@@ -243,7 +263,7 @@ i.fas{
 .gridlog{
     display: grid;
     flex-direction: row; 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 2rem;
     background-color: #f2f2f2;
