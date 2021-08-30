@@ -19,6 +19,10 @@ body{
     box-sizing: border-box;
 }
 
+.main{
+    padding-left: 2rem;
+}
+
 .gridcontainer{
     max-width : 1440px;
     margin : auto;
@@ -46,6 +50,7 @@ header{
     display: flex;
     /* position: absolute; */
     align-items: center;
+    padding-left: 1.4rem;
 }
 
 .menu{
@@ -80,6 +85,7 @@ header a:hover, header a:active{
 
 .searchbar {
     display : flex;
+    padding-left: 2rem;
     /* border: solid rgba(red, green, blue, alpha) 0.05rem;
     height : 3rem;
     width : 20rem;
@@ -97,10 +103,21 @@ header a:hover, header a:active{
 
 .login{
     color : #0065FC !important;
+    padding-left: 2rem;
     /* font-weight: bold; */
 }
 
+.firstT{
+    padding-left: 600rem;
+    margin: 25rem;
+}
+
+.subtitle{
+    padding-left: 2rem;
+}
+
 .searchbutton{
+    padding-left: 2rem;
     background-color : #0065FC;
     color : white;
     font-weight : bold;
@@ -119,7 +136,7 @@ header a:hover, header a:active{
 .searchfield{
     width : 14vw;
     border : none;
-    padding : 0 1.15rem;
+    padding : 0 1.5rem;
 }
 
 .searchfield::placeholder{
@@ -145,6 +162,7 @@ i.fas{
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 50px;
+    padding-left: 2rem;
 }
 
 .containf{
@@ -184,6 +202,7 @@ i.fas{
 }
 
 .resultsearch{
+    padding-left: 2rem;
     display: flex;
     margin: 1rem 0 2rem 0;
     align-items: center;
@@ -555,6 +574,7 @@ a.footerlink:link, a.footerlink:active{
 
     .logocontainer{
         justify-content: right;
+        width: 250%;
     }
 
     .login{
