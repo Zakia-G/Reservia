@@ -25,8 +25,9 @@ body{
 
 .gridcontainer{
     max-width : 1240px;
-    margin : auto;
-    padding : 0 2rem;
+    margin: 0rem;
+    /* margin : auto; */
+    /* padding : 0 2rem; */
 }
 
 .middle{
@@ -43,14 +44,17 @@ header{
 } */
 
 #logo{
-    width: 15%;
+    width: 20%;
+    padding: 0rem;
 }
 
 .logocontainer{
     display: flex;
     /* position: absolute; */
     align-items: center;
-    padding-left: 1rem;
+    /* margin-left: 0;
+    padding-left: 0; */
+    /* padding-left: 1rem; */
 }
 
 main{
@@ -62,6 +66,7 @@ main{
     /* grid-template-columns: 60% auto auto auto; */
     grid-template-columns: 60% auto auto auto;
     text-align: left;
+    justify-content: left;
 }
 
 .menu>a{
@@ -439,6 +444,7 @@ i.fas{
 }
   
 .footer{
+    align-items: center;
     margin-top: 50px;
     padding: 2rem;
     font-family: "Raleway", "Sans serif";
@@ -446,6 +452,7 @@ i.fas{
 }
 
 .columncontainer{
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -512,11 +519,22 @@ a.footerlink:link, a.footerlink:active{
 
 @media (max-width: 1200px) {
 
-    /* .h1, .subtitle, .searchbar, .filters, .resultsearch, .footer{
+    .subtitle, .searchbar, .filters, .resultsearch, .footer{
         padding-left: 2rem;
-    } */
+    }
 
-    .searchbar{
+    #firstT{
+        padding: 2rem;
+    }
+
+    .h1{
+        padding: 2rem;
+        border-left: 2rem;
+        padding-left: 2rem !important;
+        margin: 2rem;
+    }
+
+    /* .searchbar{
         padding: 0;
     }
 
@@ -526,32 +544,28 @@ a.footerlink:link, a.footerlink:active{
 
     .subtitle{
         padding: 0;
-    }
+    } */
 
     .searchbutton{
-        padding: 0;
+        min-height: 64px;
     }
 
-    .filters{
+    /* .filters{
         padding: 0;
     }
 
     .resultsearch{
         padding: 0;
     }
+ */
 
-
-    #activites{
-        padding: 0 2rem;
-    }
-
+  
     .gridcontainer {
         max-width: 100%;
         padding: 0;
     }
     
     .gridlog{
-        padding: 0;
         display: grid;
         grid-template-rows: repeat(3, min-content);
         padding: 2rem;
@@ -561,7 +575,6 @@ a.footerlink:link, a.footerlink:active{
 
     .flexaside{
         row-gap: 2rem;
-        padding: 0;
     }
 
     .filtertitle{
@@ -569,7 +582,6 @@ a.footerlink:link, a.footerlink:active{
     }
 
     .aside{
-        padding: 0;
         display: grid;
         grid-template-rows: auto repeat(3, 1fr);
         grid-template-columns: auto;
@@ -594,8 +606,10 @@ a.footerlink:link, a.footerlink:active{
     }
 
     .logocontainer{
-        justify-content: right;
-        width: 250%;
+        padding-left: 2rem;
+        justify-content: left;
+        width: 150%;
+        /* width: 100%; */
     }
 
     .login{
@@ -612,6 +626,7 @@ a.footerlink:link, a.footerlink:active{
 
     i.fa-search{
         display: flex;
+        align-items: center;
     }
 
     .switch{
@@ -619,6 +634,7 @@ a.footerlink:link, a.footerlink:active{
     }
 
     .grid-container{
+        /* padding : 2rem; */
         grid-template-columns: auto;
         grid-template-rows: repeat(6, 40vw);
         row-gap: 2rem;
@@ -644,17 +660,16 @@ a.footerlink:link, a.footerlink:active{
         color:  #0065FC;
     }
 
-    h1, .subtitle, .searchbar, .filters, .resultsearch, .footer{
+    /* h1, .subtitle, .searchbar, .filters, .resultsearch, .footer{
         padding-left: 2rem;
-    }
+    } */
 
     #activites{
-        /* padding: 0 2rem; */
-        padding-left: 15rem;
+        padding: 0 2rem;
     }
+
     .gridcontainer {
         max-width: 100%;
-        padding: 0;
     }
     
     .gridlog{
@@ -664,4 +679,10 @@ a.footerlink:link, a.footerlink:active{
         background-color: white;
         border-radius: 1.5rem;
     }
-}
+    
+
+    
+    .footer{
+        align-items: center;
+        width: 100%;
+    }
