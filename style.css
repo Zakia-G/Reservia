@@ -119,6 +119,8 @@ header a:hover, header a:active{
 
 
 .searchbutton{
+    display: flex;
+    align-items: center;
     background-color : #0065FC;
     color : white;
     font-weight : bold;
