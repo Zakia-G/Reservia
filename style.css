@@ -24,6 +24,7 @@ body{
 
 
 .gridcontainer{
+    width: 100%;
     max-width : 1240px;
     margin: 0rem;
     /* margin : auto; */
@@ -64,7 +65,7 @@ main{
 .menu{
     display : grid;
     /* grid-template-columns: 60% auto auto auto; */
-    grid-template-columns: 60% auto auto auto;
+    grid-template-columns: 70% auto auto auto;
     text-align: left;
     justify-content: left;
 }
@@ -82,6 +83,7 @@ header a{
 }
 
 a:link, a:visited{
+    justify-content: center;
     text-decoration : none;
     color: black;
 }
@@ -534,6 +536,13 @@ a.footerlink:link, a.footerlink:active{
         margin: 2rem;
     }
 
+    a:link, a:visited{
+        justify-content: center;
+        text-decoration : none;
+        color: black;
+    }
+
+
     /* .searchbar{
         padding: 0;
     }
@@ -658,6 +667,12 @@ a.footerlink:link, a.footerlink:active{
         border-top: none;
         border-bottom: 2px solid #0065FC;
         color:  #0065FC;
+    }
+
+    header a.nav{
+        text-decoration: none;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
     }
 
     /* h1, .subtitle, .searchbar, .filters, .resultsearch, .footer{
