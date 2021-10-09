@@ -460,16 +460,17 @@ i.fas{
     font-family: "Raleway", "Sans serif";
     background-color: #f2f2f2;
     margin-left: 2rem;
-    width: 70%;
+    width: 100%;
 }
 
 .columncontainer{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding-left: 2rem;
     max-width: 100%;
     width: 1440px;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .columnone, .columntwo, .columnthree{
@@ -512,7 +513,16 @@ a.footerlink:link, a.footerlink:active{
     .asidebox{
         justify-content: space-between;
         justify-content: center;
-        
+
+    }
+
+    .searchbar{
+        padding: 0;
+        margin: 2rem;
+    }
+
+    .descricontainer{
+        width: 80%;
     }
 
     .aside{
@@ -583,6 +593,15 @@ a.footerlink:link, a.footerlink:active{
         min-height: 64px;
     }
 
+    .searchbar{
+        padding: 0;
+        margin: 2rem;
+    }
+
+    .descricontainer{
+        width: 80%;
+    }
+    
     /* .filters{
         padding: 0;
     }
